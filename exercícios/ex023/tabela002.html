@@ -20,6 +20,15 @@
             background-color: gray;
             color: white;
         }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        
+
         td.num{
             text-align: right;
         }
@@ -29,6 +38,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!-- anatomia para tabelas grandes
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             YBODY
@@ -36,10 +46,11 @@
             TFOOT
                 TR, TD, TH-->
     <table>
+        <CAPtion>População por estado</CAPtion>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -156,7 +167,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>Total Habitantes</td>
+                <th scope="row">Total Habitantes</th>
                 <td class="num"><strong>214 211 951</strong></td>
             </tr>
         </tfoot>
